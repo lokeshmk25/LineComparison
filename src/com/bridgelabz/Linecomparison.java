@@ -18,16 +18,9 @@ public class Linecomparison {
         int a2=ab.nextInt();
         int b1=ab.nextInt();
         int b2=ab.nextInt();
-
+        //compareTo method
         Double lengthofline1 = Math.sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
         Double lengthofline2 = Math.sqrt((a2-a1)*(a2-a1)+(b2-b1)*(b2-b1));
-        System.out.println("The length of line1 is=" +lengthofline1);
-        System.out.println("The length of line2 is=" +lengthofline2);
-
-        if(lengthofline1.equals(lengthofline2)) {
-            System.out.println("The lines are equal");
-        }
-        else
-            System.out.println("The lines are not equal");
+        System.out.println(lengthofline1.compareTo(lengthofline2));
     }
 }
