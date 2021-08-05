@@ -12,8 +12,22 @@ public class Linecomparison {
         int y1=xy.nextInt();
         int y2=xy.nextInt();
 
-        double lengthofline = Math.sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
-        System.out.println(lengthofline);
+        Scanner ab = new Scanner(System.in);
+        System.out.println("enter the ab numbers");
+        int a1=ab.nextInt();
+        int a2=ab.nextInt();
+        int b1=ab.nextInt();
+        int b2=ab.nextInt();
 
+        Double lengthofline1 = Math.sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
+        Double lengthofline2 = Math.sqrt((a2-a1)*(a2-a1)+(b2-b1)*(b2-b1));
+        System.out.println("The length of line1 is=" +lengthofline1);
+        System.out.println("The length of line2 is=" +lengthofline2);
+
+        if(lengthofline1.equals(lengthofline2)) {
+            System.out.println("The lines are equal");
+        }
+        else
+            System.out.println("The lines are not equal");
     }
 }
